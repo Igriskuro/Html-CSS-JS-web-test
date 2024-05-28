@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style-cad.css">
+</head>
+<body>
+  <div class="conteiner-inicial" id="Inicio">
+
+    <div class="container"> <!--Caixa de perfil do usuário ao passar o mouse em cima da foto de perfil-->
+        <div class="element" onmouseover="showOptions()" onmouseout="hideOptions()"><img src="IMG/user-profile-icon.jpg" class="foto-perfil"></div>
+        <div class="options" id="optionsBox">
+            <h4 class="user-nm">Usuário:<span style="color: black"> - - - - </span> </h4> <!--Onde ficará o nome do usuário-->
+            <button onclick="window.location.href = 'index.html'">Inicio</button>
+            <button onclick="alert('Opção 2 selecionada')">Opção 2</button>
+            <button onclick="alert('Opção 3 selecionada')">Opção 3</button>
+        </div>
+    </div>
+
+    <h2 class="nome">Pokemon PvP Guide</h2>
+
+    <div class="conteiner-inicial-2">
+
+        <span>
+
+        <a class="opt-1" href="#Inicio">Retornar ao Inicio</a>
+        <a class="opt-2" target="_blank" href="https://www.smogon.com/dex/sm/pokemon/">Smogon</a>
+        <a class="opt-3" target="_blank" href="https://pokemonshowdown.com/">Showdown</a>
+
+        </span>
+        
+        <div class="conteiner-inicial-3">
+            <span></span>
+        </div>
+
+      </div>
+
+  </div>
+
+  <main class="area-princ">
+
+    <center>
+
+    <div class="desc-post">
+        
+        <div class="desc-text">
+
+            <h2 class="desc-h2">CADASTRA-SE</h2>
+
+            <form action="cad-veri.php" method="POST" id="cadin" target="">
+                <input type="text" id="nome" name="UserName" placeholder="Nome de Usuário.">
+            </form>    
+            
+            <p class="desc-p" ></p>
+                
+            <a href="index.html">VOLTAR</a>
+
+        </div>
+        
+    </div>
+
+    </center>
+    
+    <script src="script.js"></script>
+</body>
+</html>
